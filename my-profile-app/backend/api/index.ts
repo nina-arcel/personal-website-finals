@@ -20,19 +20,6 @@ app.get('/api/guestbook', async (req: Request, res: Response) => {
   res.json(data);
 });
 
-// GET single entry
-app.get('/api/guestbook/:id', async (req: Request, res: Response) => {
-  const { id } = req.params;
-  const { data, error } = await supabase
-    .from('guestbook_entries')
-    .select('*')
-    .eq('id', id)
-    .single();
-  
-  if (error) return res.status(404).json({ error: 'Entry not found' });
-  res.json(data);
-});
-
 // POST new entry
 app.post('/api/guestbook', async (req: Request, res: Response) => {
   const { name, message } = req.body;
@@ -81,4 +68,5 @@ app.delete('/api/guestbook/:id', async (req: Request, res: Response) => {
   res.status(204).send();
 });
 
+// ⭐ IMPORTANT: Export for Vercel serverless
 export default app;

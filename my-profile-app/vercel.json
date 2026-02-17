@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "builds": [
     {
       "src": "backend/src/main.ts",
@@ -9,8 +8,7 @@
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build",
-        "zeroConfig": false
+        "distDir": "build"
       }
     }
   ],

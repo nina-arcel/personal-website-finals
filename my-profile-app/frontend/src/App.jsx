@@ -37,6 +37,8 @@ function App() {
   return (
     <div className="container">
       <h1 className="Cal-text">Guestbook</h1>
+
+      <p>Please fill out the form below to let us know what you think.</p>
       
       <div id="app">
         <form onSubmit={handleSubmit}>

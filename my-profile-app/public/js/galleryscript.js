@@ -1,5 +1,11 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+
+// Initialize slideshow
+document.addEventListener('DOMContentLoaded', function() {
+    if (document.getElementsByClassName('mySlides').length > 0) {
+        showSlides(slideIndex);
+    }
+});
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -15,6 +21,8 @@ function showSlides(n) {
     let dots = document.getElementsByClassName("demo");
     let captionText = document.getElementById("caption");
     
+    if (!slides || slides.length === 0) return;
+    
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     
@@ -27,6 +35,11 @@ function showSlides(n) {
     }
     
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    captionText.innerHTML = dots[slideIndex - 1].alt;
+    
+    if (dots.length > 0) {
+        dots[slideIndex - 1].className += " active";
+        if (captionText) {
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    }
 }

@@ -3,7 +3,7 @@
 // ============================================
 
 function showTab(tabName) {
-    // Hide all tabs
+    // Hide all tab contents
     const tabs = document.getElementsByClassName('tab-content');
     for (let i = 0; i < tabs.length; i++) {
         tabs[i].classList.remove('active-tab');
@@ -15,12 +15,26 @@ function showTab(tabName) {
         buttons[i].classList.remove('active');
     }
     
-    // Show selected tab
+    // Show the selected tab
     document.getElementById(tabName).classList.add('active-tab');
     
     // Add active class to clicked button
     event.target.classList.add('active');
 }
+
+// Initialize tabs on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Make sure first tab is active
+    const firstTab = document.querySelector('.tab-btn');
+    if (firstTab) {
+        firstTab.classList.add('active');
+    }
+    
+    const firstContent = document.querySelector('.tab-content');
+    if (firstContent) {
+        firstContent.classList.add('active-tab');
+    }
+});
 
 // ============================================
 // SLIDESHOW GALLERY FUNCTIONALITY

@@ -323,3 +323,12 @@
 .image-grid-4.square-images {
     grid-template-columns: repeat(4, 1fr);
 }
+
+.section-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f8e1ed, #ffc0cb, #f8e1ed, transparent);
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 2px;
+}

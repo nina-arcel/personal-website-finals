@@ -1,4 +1,4 @@
-let slideIndex = 1;
+let slideIndex = 1; 
 
 // Initialize slideshow
 document.addEventListener('DOMContentLoaded', function() {
@@ -23,8 +23,8 @@ function showSlides(n) {
     
     if (!slides || slides.length === 0) return;
     
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
     
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";

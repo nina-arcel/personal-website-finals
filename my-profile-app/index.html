@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="/css/ambitions.css">       
     <link rel="stylesheet" href="/css/gallery.css">                
     <link rel="stylesheet" href="/css/guestbookstyle.css">
+    
+    <!-- Missing CSS files - add these if they exist -->
+    <link rel="stylesheet" href="/css/hobbies.css">
+    <link rel="stylesheet" href="/css/resource.css">
 </head>
 <body>
     <!-- Main Container with Flexbox for Left/Right Layout -->
@@ -52,9 +56,8 @@
                 <button class="tab-btn" onclick="showTab('resources')">Resources</button>
             </div>
 
-            <!-- ABOUT TAB - Now includes Ambitions and Picture Gallery -->
+            <!-- ABOUT TAB -->
             <div id="about" class="tab-content active-tab">
-                
                 <!-- About Me Cards -->
                 <div class="about-grid">
                     <div class="about-card">
@@ -84,7 +87,7 @@
                     </div>
                 </div>
 
-                <!-- AMBITIONS SECTION - Now in About tab -->
+                <!-- AMBITIONS SECTION -->
                 <h2 class="Cal-text">Ambitions</h2>
                 <div class="ambitions-container">
                     <div class="ambition-card">
@@ -103,108 +106,108 @@
                     </div>
                 </div>
 
-                <!-- PICTURE GALLERY - Now in About tab -->
-                <!-- PICTURE GALLERY - Now in About tab with your CSS -->
-<div class="containergoogle">
-    <h2 class="apple-text">Niña's Picture Gallery</h2>
-</div>
+                <!-- PICTURE GALLERY -->
+                <div class="containergoogle">
+                    <h2 class="apple-text">Niña's Picture Gallery</h2>
+                </div>
 
-<!-- Slideshow Gallery with your CSS classes -->
-<div class="container">
-    <!-- Full-width slides -->
-    <div class="mySlides">
-        <div class="numbertext">1 / 11</div>
-        <img src="/public/assets/Family2.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div class="numbertext">2 / 11</div>
-        <img src="/public/assets/Family.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div class="numbertext">3 / 11</div>
-        <img src="/public/assets/Concert.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div class="numbertext">4 / 11</div>
-        <img src="/public/assets/Youth.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div class="numbertext">5 / 11</div>
-        <img src="/public/assets/PAW2.jpg" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div class="numbertext">6 / 11</div>
-        <img src="/public/assets/DG.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div class="numbertext">7 / 11</div>
-        <img src="/public/assets/Friend.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div class="numbertext">8 / 11</div>
-        <img src="/public/assets/Friend2.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div class="numbertext">9 / 11</div>
-        <img src="/public/assets/CollegeFriends.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div class="numbertext">10 / 11</div>
-        <img src="/public/assets/PAW.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div class="numbertext">11 / 11</div>
-        <img src="/public/assets/CE.jpg" style="width:100%">
-    </div>
+                <!-- Slideshow Gallery -->
+                <div class="container">
+                    <!-- Full-width slides -->
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 11</div>
+                        <img src="/public/assets/Family2.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 11</div>
+                        <img src="/public/assets/Family.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 11</div>
+                        <img src="/public/assets/Concert.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 11</div>
+                        <img src="/public/assets/Youth.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 11</div>
+                        <img src="/public/assets/PAW2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 11</div>
+                        <img src="/public/assets/DG.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 11</div>
+                        <img src="/public/assets/Friend.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 11</div>
+                        <img src="/public/assets/Friend2.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 11</div>
+                        <img src="/public/assets/CollegeFriends.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">10 / 11</div>
+                        <img src="/public/assets/PAW.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">11 / 11</div>
+                        <img src="/public/assets/CE.jpg" style="width:100%">
+                    </div>
 
-    <!-- Navigation buttons -->
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
 
-    <!-- Caption -->
-    <div class="caption-container">
-        <p id="caption"></p>
-    </div>
+                    <!-- Caption -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
 
-    <!-- Thumbnail images -->
-    <div class="row">
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/Family2.png" style="width:100%" onclick="currentSlide(1)" alt="Family trip at Hong Kong">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/Family.png" style="width:100%" onclick="currentSlide(2)" alt="Family Picture">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/Concert.png" style="width:100%" onclick="currentSlide(3)" alt="My First Concert">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/Youth.png" style="width:100%" onclick="currentSlide(4)" alt="Youth Ministry Members">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/PAW2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Praise & Worship Members">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/DG.png" style="width:100%" onclick="currentSlide(6)" alt="My Discipleship Group">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/Friend.png" style="width:100%" onclick="currentSlide(7)" alt="My Friend since elementary">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/Friend2.png" style="width:100%" onclick="currentSlide(8)" alt="My Friend since High School">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/CollegeFriends.png" style="width:100%" onclick="currentSlide(9)" alt="College Friends">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/PAW.png" style="width:100%" onclick="currentSlide(10)" alt="Singing at Church">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="/public/assets/CE.jpg" style="width:100%" onclick="currentSlide(11)" alt="Teaching Kids at Church">
-        </div>
-    </div>
-</div>
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/Family2.png" style="width:100%" onclick="currentSlide(1)" alt="Family trip at Hong Kong">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/Family.png" style="width:100%" onclick="currentSlide(2)" alt="Family Picture">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/Concert.png" style="width:100%" onclick="currentSlide(3)" alt="My First Concert">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/Youth.png" style="width:100%" onclick="currentSlide(4)" alt="Youth Ministry Members">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/PAW2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Praise & Worship Members">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/DG.png" style="width:100%" onclick="currentSlide(6)" alt="My Discipleship Group">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/Friend.png" style="width:100%" onclick="currentSlide(7)" alt="My Friend since elementary">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/Friend2.png" style="width:100%" onclick="currentSlide(8)" alt="My Friend since High School">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/CollegeFriends.png" style="width:100%" onclick="currentSlide(9)" alt="College Friends">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/PAW.png" style="width:100%" onclick="currentSlide(10)" alt="Singing at Church">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="/public/assets/CE.jpg" style="width:100%" onclick="currentSlide(11)" alt="Teaching Kids at Church">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ← THIS WAS MISSING! Close About tab -->
 
-            <!-- SKILLS & INTERESTS TAB - Clean, only skills and hobbies -->
+            <!-- SKILLS & INTERESTS TAB -->
             <div id="skills" class="tab-content">
                 <!-- Technical Skills -->
                 <div class="about-card">
@@ -220,7 +223,7 @@
                     </div>
                 </div>
 
-                <!-- Hobbies and Interests ONLY -->
+                <!-- Hobbies and Interests -->
                 <div class="about-card">
                     <h3>🎨 Hobbies & Interests</h3>
                     
@@ -253,7 +256,7 @@
                 </div>
             </div>
 
-            <!-- RESOURCES TAB - Clean, only resources -->
+            <!-- RESOURCES TAB -->
             <div id="resources" class="tab-content">
                 <div class="about-card">
                     <h3>Resource Documentation</h3>
@@ -287,18 +290,17 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> <!-- Close profile-content -->
 
         <!-- RIGHT SIDE: Guestbook -->
         <div class="guestbook-sidebar">
             <div id="guestbook-root"></div>
         </div>
-    </div>
+    </div> <!-- Close main-container -->
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/public/js/scripts.js"></script>
     <script src="/public/js/galleryscript.js"></script>
-
 </body>
 </html>

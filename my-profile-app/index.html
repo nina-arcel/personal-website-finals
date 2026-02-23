@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niña's Personal Profile</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Cal+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Main Container with Flexbox for Left/Right Layout -->
+    <div class="main-container">
+        
+        <!-- LEFT SIDE: Personal Profile Content (60%) -->
+        <div class="profile-content">
+            
+            <!-- Header -->
+            <div class="containergoogle">
+                <h1 class="apple-text">Niña's Personal Profile Webpage</h1>
+            </div>
+
+            <!-- About Me Section -->
+            <!-- Facebook-Style Profile Header -->
+<div class="profile-header">
+    <!-- Cover Photo -->
+    <div class="cover-photo">
+        <img src="assets/cover-photo.jpg" alt="Cover Photo">
+    </div>
+    
+    <!-- Profile Picture and Info -->
+    <div class="profile-info">
+        <div class="profile-picture">
+            <img src="assets/ProfilePicture.png" alt="Niña Arcel Ramos">
+        </div>
+        <div class="profile-details">
+            <h1 class="profile-name">Niña Arcel R. Ramos</h1>
+            <p class="profile-handle">@nina_arcel</p>
+            <div class="profile-bio">
+                <p>BS Information Technology Student at Asia Pacific College • Ministry Volunteer • Designer</p>
+            </div>
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <span class="stat-value">15+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">3</span>
+                    <span class="stat-label">Years</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">5</span>
+                    <span class="stat-label">Organizations</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Me Content Tabs -->
+<div class="profile-tabs">
+    <button class="tab-btn active" onclick="showTab('about')">About</button>
+    <button class="tab-btn" onclick="showTab('education')">Education</button>
+    <button class="tab-btn" onclick="showTab('skills')">Skills</button>
+</div>
+
+<!-- Tab Content -->
+<div id="about" class="tab-content active-tab">
+    <div class="about-grid">
+        <div class="about-card">
+            <h3>👋 About Me</h3>
+            <ul class="info-list">
+                <li><strong>Full Name:</strong> Niña Arcel R. Ramos</li>
+                <li><strong>Nickname:</strong> Nins</li>
+                <li><strong>Nationality:</strong> Filipino</li>
+                <li><strong>Location:</strong> Pasay City, Philippines</li>
+                <li><strong>Languages:</strong> Filipino, English</li>
+            </ul>
+        </div>
+        
+        <div class="about-card">
+            <h3>💡 Why I Chose IT</h3>
+            <p>My Grade 12 research project focused on Convolutional Neural Networks (CNN) and Machine Learning. This experience introduced me to technology in a deeper way and inspired me to pursue IT in college.</p>
+        </div>
+        
+        <div class="about-card">
+            <h3>🎯 Life Goals</h3>
+            <ul class="info-list">
+                <li>• Continue serving in our church and become a ministry leader</li>
+                <li>• Graduate college at Asia Pacific College (APC)</li>
+                <li>• Travel to different countries</li>
+                <li>• Build innovative tech solutions for community</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="education" class="tab-content">
+    <div class="about-grid">
+        <div class="about-card">
+            <h3>🎓 Educational Background</h3>
+            <div class="timeline-item">
+                <h4>Asia Pacific College</h4>
+                <p class="timeline-date">2023 - Present</p>
+                <p>Bachelor of Science in Information Technology (BSIT)</p>
+            </div>
+            <div class="timeline-item">
+                <h4>Pasay City National Science High School</h4>
+                <p class="timeline-date">2021 - 2023</p>
+                <p>Senior High School - STEM Strand</p>
+            </div>
+        </div>
+        
+        <div class="about-card">
+            <h3>🏆 Achievements</h3>
+            <ul class="info-list">
+                <li>• Dean's Lister - Asia Pacific College</li>
+                <li>• Research Presenter - School Science Fair</li>
+                <li>• Youth Ministry Volunteer of the Year</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="skills" class="tab-content">
+    <div class="about-grid">
+        <div class="about-card">
+            <h3>💻 Technical Skills</h3>
+            <div class="skills-container">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Outsystems</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Canva</span>
+            </div>
+        </div>
+        
+        <div class="about-card">
+            <h3>🚀 Skills to Improve</h3>
+            <ul class="info-list">
+                <li>• Strengthen programming logic</li>
+                <li>• Improve public speaking</li>
+                <li>• Learn React and modern frameworks</li>
+                <li>• Enhance UI/UX design skills</li>
+            </ul>
+        </div>
+        
+        <div class="about-card">
+            <h3>🛠️ Tools I Use</h3>
+            <ul class="info-list">
+                <li>• VS Code</li>
+                <li>• MySQL Workbench</li>
+                <li>• Figma</li>
+                <li>• Canva</li>
+                <li>• Git & GitHub</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+            <!-- Hobbies Section -->
+            <h2 class="Cal-text">My Hobbies and Interests</h2>
+            <div class="container grid hobbies">
+                <div class="hobby-item">
+                    <p class="lead">🏓 Playing Table Tennis</p>
+                    <div class="image-grid-2">
+                        <img src="assets/TableTennis.jpg" alt="Table Tennis">
+                        <img src="assets/TableTennis2.jpg" alt="Table Tennis 2">
+                    </div>
+                </div>
+                <div class="hobby-item">
+                    <p class="lead">🎤 Singing</p>
+                    <div class="image-grid-2">
+                        <img src="assets/Youth2.jpg" alt="Singing">
+                        <img src="assets/Singing.png" alt="Singing 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Designs Section -->
+            <div class="container grid designs">
+                <div class="design-text">
+                    <p class="lead">🎨 Designing digital posters</p>
+                    <p>Here are some of my creations from Church Ministry and School Events.</p>
+                </div>
+                <div class="image-grid-4">
+                    <img src="assets/TShirt.png" alt="T-Shirt Design">
+                    <img src="assets/Poster.png" alt="Poster">
+                    <img src="assets/Poster2.png" alt="Poster 2">
+                    <img src="assets/Poster3.png" alt="Poster 3">
+                </div>
+            </div>
+
+            <!-- Ambitions Section -->
+            <h2 class="Cal-text">Ambitions</h2>
+            <div class="container challenge">
+                <div class="row border">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <p class="lead">💡 Why IT?</p>
+                        <p>My Grade 12 research on CNN and Machine Learning inspired me to pursue IT.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <p class="lead">🚀 Skills to Improve</p>
+                        <p>• Programming logic<br>• Public speaking<br>• Code structure</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <p class="lead">🎯 Life Goals</p>
+                        <p>• Become a ministry leader<br>• Graduate from APC<br>• Travel the world</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <img src="assets/ProfilePicture2.png" alt="Profile" class="profile-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="containergoogle">
+                <h2 class="apple-text">Niña's Picture Gallery</h2>
+                <p>Significant people, events and volunteer work in my life.</p>
+            </div>
+
+            <!-- Slideshow Gallery -->
+            <div class="slideshow-container">
+                <!-- Slides will be populated by JavaScript -->
+            </div>
+
+            <!-- Resource Documentation -->
+            <h2 class="Cal-text">Resource Documentation</h2>
+            <div class="container challenge">
+                <div class="row border">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <p class="lead">AI Assistance</p>
+                        <ul class="nav flex-column">
+                            <li><a href="https://chatgpt.com/share/695bca01-47a4-800c-94c5-a38a266d4702" target="_blank">ChatGPT</a></li>
+                            <li><a href="https://gemini.google.com/share/3878fceb63d1" target="_blank">Google Gemini</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <p class="lead">W3Schools</p>
+                        <ul class="nav flex-column">
+                            <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid" target="_blank">CSS Grid</a></li>
+                            <li><a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery" target="_blank">Slideshow Gallery</a></li>
+                            <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox" target="_blank">Flexbox</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <p class="lead">Google Fonts</p>
+                        <ul class="nav flex-column">
+                            <li><a href="https://fonts.google.com/specimen/Homemade+Apple" target="_blank">Homemade Apple</a></li>
+                            <li><a href="https://fonts.google.com/specimen/Cal+Sans" target="_blank">Cal Sans</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: Guestbook (40%) - This will be your React app -->
+        <div class="guestbook-sidebar">
+            <div id="guestbook-root"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/galleryscript.js"></script>
+    <script src="js/scripts.js"></script>
+    
+    <!-- Your React Guestbook will mount here -->
+    <script type="module" src="/src/index.jsx"></script>
+</body>
+</html>

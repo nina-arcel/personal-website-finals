@@ -1,0 +1,21 @@
+/* Right Side - Guestbook */
+.guestbook-sidebar {
+    flex: 0 0 40%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-left: 2px solid #f8e1ed;
+    overflow-y: auto;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+/* Guestbook Styling */
+#guestbook-root #app {
+    width: 100%;
+    max-width: 100%;
+    background-color: #f8e1ed;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+}

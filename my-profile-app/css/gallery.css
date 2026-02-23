@@ -1,0 +1,112 @@
+/* ===== PICTURE GALLERY STYLES (from your original CSS) ===== */
+* { 
+    box-sizing: border-box; 
+}
+
+img { 
+    vertical-align: middle; 
+}
+
+.container { 
+    position: relative; 
+}
+
+.mySlides { 
+    display: none; 
+}
+
+.cursor { 
+    cursor: pointer; 
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgba(0, 0, 0, 0.089);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(251, 255, 0, 0.349);
+    text-decoration: none;
+}
+
+.next { 
+    right: 0; 
+    border-radius: 3px 0 0 3px; 
+}
+
+.prev:hover, .next:hover { 
+    background-color: #f8e1ed; 
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #f8e1ed;
+    padding: 2px 16px;
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 11 columns (100% / 11 = 9.09%) */
+.column {
+    float: left;
+    width: 9.09%;
+    padding: 2px;
+}
+
+.demo { 
+    opacity: 0.6; 
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+}
+
+.active, .demo:hover { 
+    opacity: 1; 
+}
+
+/* Responsive adjustments for gallery */
+@media screen and (max-width: 768px) {
+    .column {
+        width: 16.66%; /* 6 columns on tablet */
+    }
+    
+    .prev, .next {
+        top: 30%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        width: 33.33%; /* 3 columns on mobile */
+    }
+    
+    .prev, .next {
+        top: 25%;
+        padding: 8px;
+        font-size: 16px;
+    }
+}

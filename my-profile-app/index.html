@@ -13,6 +13,12 @@
     
     <!-- Your Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/ambition.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="/css/guestbookstyle.css">
+    <link rel="stylesheet" href="/css/hobbies.css">
+    <link rel="stylesheet" href="/css/resources.css">
 </head>
 <body>
     <!-- Main Container with Flexbox for Left/Right Layout -->
@@ -24,7 +30,7 @@
             <!-- Facebook-Style Profile Header -->
             <div class="profile-header">
                 <div class="cover-photo">
-                    <img src="/public/assets/cover-photo.png" alt="Cover Photo" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #f8e1ed, #ffc0cb)'">
+                    <img src="/public/assets/cover-photo.jpg" alt="Cover Photo" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #f8e1ed, #ffc0cb)'">
                 </div>
                 
                 <div class="profile-info">
@@ -37,20 +43,21 @@
                         <div class="profile-bio">
                             <p>BS Information Technology Student at Asia Pacific College • Ministry Volunteer • Designer</p>
                         </div>
-                        <!-- REMOVED: profile-stats section (15+ projects, etc.) -->
                     </div>
                 </div>
             </div>
 
-            <!-- Profile Tabs - Now with 3 tabs -->
+            <!-- Profile Tabs -->
             <div class="profile-tabs">
                 <button class="tab-btn active" onclick="showTab('about')">About</button>
                 <button class="tab-btn" onclick="showTab('skills')">Skills & Interests</button>
                 <button class="tab-btn" onclick="showTab('resources')">Resources</button>
             </div>
 
-            <!-- About Tab -->
+            <!-- ABOUT TAB - Now includes Ambitions and Picture Gallery -->
             <div id="about" class="tab-content active-tab">
+                
+                <!-- About Me Cards -->
                 <div class="about-grid">
                     <div class="about-card">
                         <h3>👋 About Me</h3>
@@ -78,9 +85,129 @@
                         </ul>
                     </div>
                 </div>
-            </div>
 
-            <!-- Skills & Interests Tab - REMOVED skills to improve, ambitions, picture gallery -->
+                <!-- AMBITIONS SECTION - Now in About tab -->
+                <h2 class="Cal-text">Ambitions</h2>
+                <div class="ambitions-container">
+                    <div class="ambition-card">
+                        <h3>💡 Why I Chose IT</h3>
+                        <p>My Grade 12 research project focused on Convolutional Neural Networks (CNN) and Machine Learning. This experience introduced me to technology in a deeper way and inspired me to pursue IT in college.</p>
+                    </div>
+                    
+                    <div class="ambition-card">
+                        <h3>🚀 Skills I Want to Improve</h3>
+                        <p>• Strengthen my programming skills<br>• Improve how I build and structure program logic<br>• Improve my public speaking skills</p>
+                    </div>
+                    
+                    <div class="ambition-card">
+                        <h3>🎯 My Life Goals</h3>
+                        <p>• Continue serving in our church and become a ministry leader<br>• Graduate college at Asia Pacific College (APC)<br>• Travel to different countries</p>
+                    </div>
+                </div>
+
+                <!-- PICTURE GALLERY - Now in About tab -->
+                <!-- PICTURE GALLERY - Now in About tab with your CSS -->
+<div class="containergoogle">
+    <h2 class="apple-text">Niña's Picture Gallery</h2>
+    <p>Significant people, events and volunteer work in my life.</p>
+</div>
+
+<!-- Slideshow Gallery with your CSS classes -->
+<div class="container">
+    <!-- Full-width slides -->
+    <div class="mySlides">
+        <div class="numbertext">1 / 11</div>
+        <img src="/public/assets/Family2.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">2 / 11</div>
+        <img src="/public/assets/Family.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">3 / 11</div>
+        <img src="/public/assets/Concert.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">4 / 11</div>
+        <img src="/public/assets/Youth.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">5 / 11</div>
+        <img src="/public/assets/PAW2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">6 / 11</div>
+        <img src="/public/assets/DG.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">7 / 11</div>
+        <img src="/public/assets/Friend.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">8 / 11</div>
+        <img src="/public/assets/Friend2.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">9 / 11</div>
+        <img src="/public/assets/CollegeFriends.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">10 / 11</div>
+        <img src="/public/assets/PAW.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">11 / 11</div>
+        <img src="/public/assets/CE.jpg" style="width:100%">
+    </div>
+
+    <!-- Navigation buttons -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <!-- Caption -->
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail images -->
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/Family2.png" style="width:100%" onclick="currentSlide(1)" alt="Family trip at Hong Kong">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/Family.png" style="width:100%" onclick="currentSlide(2)" alt="Family Picture">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/Concert.png" style="width:100%" onclick="currentSlide(3)" alt="My First Concert">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/Youth.png" style="width:100%" onclick="currentSlide(4)" alt="Youth Ministry Members">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/PAW2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Praise & Worship Members">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/DG.png" style="width:100%" onclick="currentSlide(6)" alt="My Discipleship Group">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/Friend.png" style="width:100%" onclick="currentSlide(7)" alt="My Friend since elementary">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/Friend2.png" style="width:100%" onclick="currentSlide(8)" alt="My Friend since High School">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/CollegeFriends.png" style="width:100%" onclick="currentSlide(9)" alt="College Friends">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/PAW.png" style="width:100%" onclick="currentSlide(10)" alt="Singing at Church">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/public/assets/CE.jpg" style="width:100%" onclick="currentSlide(11)" alt="Teaching Kids at Church">
+        </div>
+    </div>
+</div>
+
+            <!-- SKILLS & INTERESTS TAB - Clean, only skills and hobbies -->
             <div id="skills" class="tab-content">
                 <!-- Technical Skills -->
                 <div class="about-card">
@@ -127,12 +254,9 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- REMOVED: Skills to Improve section -->
-                <!-- REMOVED: Picture Gallery section -->
             </div>
 
-            <!-- NEW: Resources Tab (moved from bottom) -->
+            <!-- RESOURCES TAB - Clean, only resources -->
             <div id="resources" class="tab-content">
                 <div class="about-card">
                     <h3>Resource Documentation</h3>
@@ -164,67 +288,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Ambitions Section (unchanged) -->
-            <h2 class="Cal-text">Ambitions</h2>
-            <div class="ambitions-container">
-                <div class="ambition-card">
-                    <h3>💡 Why I Chose IT</h3>
-                    <p>My Grade 12 research project focused on Convolutional Neural Networks (CNN) and Machine Learning. This experience introduced me to technology in a deeper way and inspired me to pursue IT in college.</p>
-                </div>
-                
-                <div class="ambition-card">
-                    <h3>🚀 Skills I Want to Improve</h3>
-                    <p>• Strengthen my programming skills<br>• Improve how I build and structure program logic<br>• Improve my public speaking skills</p>
-                </div>
-                
-                <div class="ambition-card">
-                    <h3>🎯 My Life Goals</h3>
-                    <p>• Continue serving in our church and become a ministry leader<br>• Graduate college at Asia Pacific College (APC)<br>• Travel to different countries</p>
-                </div>
-            </div>
-
-            <!-- Gallery Section (unchanged) -->
-            <div class="containergoogle">
-                <h2 class="apple-text">Niña's Picture Gallery</h2>
-                <p>Significant people, events and volunteer work in my life.</p>
-            </div>
-
-            <!-- Slideshow Gallery -->
-            <div class="slideshow-container">
-                <div class="mySlides"><div class="numbertext">1 / 11</div><img src="/public/assets/Family2.png" style="width:100%"></div>
-                <div class="mySlides"><div class="numbertext">2 / 11</div><img src="/public/assets/Family.png" style="width:100%"></div>
-                <div class="mySlides"><div class="numbertext">3 / 11</div><img src="/public/assets/Concert.png" style="width:100%"></div>
-                <div class="mySlides"><div class="numbertext">4 / 11</div><img src="/public/assets/Youth.jpg" style="width:100%"></div>
-                <div class="mySlides"><div class="numbertext">5 / 11</div><img src="/public/assets/PAW2.jpg" style="width:100%"></div>
-                <div class="mySlides"><div class="numbertext">6 / 11</div><img src="/public/assets/DG.png" style="width:100%"></div>
-                <div class="mySlides"><div class="numbertext">7 / 11</div><img src="/public/assets/Friend.png" style="width:100%"></div>
-                <div class="mySlides"><div class="numbertext">8 / 11</div><img src="/public/assets/Friend2.png" style="width:100%"></div>
-                <div class="mySlides"><div class="numbertext">9 / 11</div><img src="/public/assets/CollegeFriends.png" style="width:100%"></div>
-                <div class="mySlides"><div class="numbertext">10 / 11</div><img src="/public/assets/PAW.png" style="width:100%"></div>
-                <div class="mySlides"><div class="numbertext">11 / 11</div><img src="/public/assets/CE.jpg" style="width:100%"></div>
-
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-
-                <div class="caption-container">
-                    <p id="caption"></p>
-                </div>
-
-                <div class="row">
-                    <div class="column"><img class="demo cursor" src="/public/assets/Family2.png" style="width:100%" onclick="currentSlide(1)" alt="Family trip at Hong Kong"></div>
-                    <div class="column"><img class="demo cursor" src="/public/assets/Family.png" style="width:100%" onclick="currentSlide(2)" alt="Family Picture"></div>
-                    <div class="column"><img class="demo cursor" src="/public/assets/Concert.png" style="width:100%" onclick="currentSlide(3)" alt="My First Concert"></div>
-                    <div class="column"><img class="demo cursor" src="/public/assets/Youth.jpg" style="width:100%" onclick="currentSlide(4)" alt="Youth Ministry Members"></div>
-                    <div class="column"><img class="demo cursor" src="/public/assets/PAW2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Praise & Worship Members"></div>
-                    <div class="column"><img class="demo cursor" src="/public/assets/DG.png" style="width:100%" onclick="currentSlide(6)" alt="My Discipleship Group"></div>
-                    <div class="column"><img class="demo cursor" src="/public/assets/Friend.png" style="width:100%" onclick="currentSlide(7)" alt="My Friend since elementary"></div>
-                    <div class="column"><img class="demo cursor" src="/public/assets/Friend2.png" style="width:100%" onclick="currentSlide(8)" alt="My Friend since High School"></div>
-                    <div class="column"><img class="demo cursor" src="/public/assets/CollegeFriends.png" style="width:100%" onclick="currentSlide(9)" alt="College Friends"></div>
-                    <div class="column"><img class="demo cursor" src="/public/assets/PAW.png" style="width:100%" onclick="currentSlide(10)" alt="Singing at Church"></div>
-                    <div class="column"><img class="demo cursor" src="/public/assets/CE.jpg" style="width:100%" onclick="currentSlide(11)" alt="Teaching Kids at Church"></div>
                 </div>
             </div>
         </div>

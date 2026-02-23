@@ -1,0 +1,41 @@
+/* Resource Grid */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.resource-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.resource-card h4 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #f8e1ed;
+    padding-bottom: 5px;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-list li {
+    margin-bottom: 8px;
+}
+
+.resource-list a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resource-list a:hover {
+    color: #f8e1ed;
+}

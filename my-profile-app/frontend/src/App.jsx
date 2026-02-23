@@ -35,10 +35,8 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <h1 className="Cal-text">Guestbook</h1>
-
-      <p className="description-text">Please fill out the form below to let us know what you think.</p>
+    <div className="guestbook-wrapper">
+      <h2 className="Cal-text">Guestbook</h2>
       
       <div id="app">
         <form onSubmit={handleSubmit}>
@@ -72,7 +70,7 @@ function App() {
           <>
             <hr />
             <div>
-              <p><strong>Recent Guestbook Entries:</strong></p>
+              <p><strong>Recent Entries:</strong></p>
               <ul>
                 {entries.map((entry) => (
                   <li key={entry.id}>
@@ -80,7 +78,7 @@ function App() {
                     <br />
                     <small>{entry.message}</small>
                     <br />
-                    <small style={{ color: '#999' }}>
+                    <small style={{ color: '#999', fontSize: '0.8em' }}>
                       {new Date(entry.created_at).toLocaleString()}
                     </small>
                   </li>

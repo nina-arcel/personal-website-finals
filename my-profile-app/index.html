@@ -37,28 +37,16 @@
                         <div class="profile-bio">
                             <p>BS Information Technology Student at Asia Pacific College • Ministry Volunteer • Designer</p>
                         </div>
-                        <div class="profile-stats">
-                            <div class="stat-item">
-                                <span class="stat-value">15+</span>
-                                <span class="stat-label">Projects</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">3</span>
-                                <span class="stat-label">Years</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">5</span>
-                                <span class="stat-label">Organizations</span>
-                            </div>
-                        </div>
+                        <!-- REMOVED: profile-stats section (15+ projects, etc.) -->
                     </div>
                 </div>
             </div>
 
-            <!-- Profile Tabs -->
+            <!-- Profile Tabs - Now with 3 tabs -->
             <div class="profile-tabs">
                 <button class="tab-btn active" onclick="showTab('about')">About</button>
                 <button class="tab-btn" onclick="showTab('skills')">Skills & Interests</button>
+                <button class="tab-btn" onclick="showTab('resources')">Resources</button>
             </div>
 
             <!-- About Tab -->
@@ -92,7 +80,7 @@
                 </div>
             </div>
 
-            <!-- Skills & Interests Tab -->
+            <!-- Skills & Interests Tab - REMOVED skills to improve, ambitions, picture gallery -->
             <div id="skills" class="tab-content">
                 <!-- Technical Skills -->
                 <div class="about-card">
@@ -108,13 +96,13 @@
                     </div>
                 </div>
 
-                <!-- Hobbies and Interests -->
+                <!-- Hobbies and Interests ONLY -->
                 <div class="about-card">
                     <h3>🎨 Hobbies & Interests</h3>
                     
                     <div class="hobby-section">
                         <h4>🏓 Playing Table Tennis</h4>
-                        <div class="image-grid-2">
+                        <div class="image-grid-2 square-images">
                             <img src="/public/assets/TableTennis.jpg" alt="Table Tennis">
                             <img src="/public/assets/TableTennis2.jpg" alt="Table Tennis 2">
                         </div>
@@ -122,7 +110,7 @@
                     
                     <div class="hobby-section">
                         <h4>🎤 Singing</h4>
-                        <div class="image-grid-2">
+                        <div class="image-grid-2 square-images">
                             <img src="/public/assets/Youth2.jpg" alt="Singing">
                             <img src="/public/assets/Singing.png" alt="Singing 2">
                         </div>
@@ -131,7 +119,7 @@
                     <div class="hobby-section">
                         <h4>🎨 Designing digital posters</h4>
                         <p>Here are some of my creations from Church Ministry and School Events.</p>
-                        <div class="image-grid-4">
+                        <div class="image-grid-4 square-images">
                             <img src="/public/assets/TShirt.png" alt="T-Shirt Design">
                             <img src="/public/assets/Poster.png" alt="Poster">
                             <img src="/public/assets/Poster2.png" alt="Poster 2">
@@ -139,20 +127,47 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- REMOVED: Skills to Improve section -->
+                <!-- REMOVED: Picture Gallery section -->
+            </div>
 
-                <!-- Skills to Improve -->
+            <!-- NEW: Resources Tab (moved from bottom) -->
+            <div id="resources" class="tab-content">
                 <div class="about-card">
-                    <h3>🚀 Skills to Improve</h3>
-                    <ul class="info-list">
-                        <li>• Strengthen programming logic</li>
-                        <li>• Improve public speaking</li>
-                        <li>• Learn React and modern frameworks</li>
-                        <li>• Enhance UI/UX design skills</li>
-                    </ul>
+                    <h3>Resource Documentation</h3>
+                    
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <h4>AI Assistance</h4>
+                            <ul class="resource-list">
+                                <li><a href="https://chatgpt.com/share/695bca01-47a4-800c-94c5-a38a266d4702" target="_blank">ChatGPT Queries</a></li>
+                                <li><a href="https://gemini.google.com/share/3878fceb63d1" target="_blank">Google Gemini Queries</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h4>W3 Schools Resources</h4>
+                            <ul class="resource-list">
+                                <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid" target="_blank">CSS Grid</a></li>
+                                <li><a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery" target="_blank">Slide Show Gallery</a></li>
+                                <li><a href="https://www.w3schools.com/vue/tryit.php?filename=tryvue_forms_shoppingList3" target="_blank">Survey Form</a></li>
+                                <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox" target="_blank">Flexbox</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h4>Google Fonts</h4>
+                            <ul class="resource-list">
+                                <li><a href="https://fonts.google.com/specimen/Homemade+Apple" target="_blank">Homemade Apple Font</a></li>
+                                <li><a href="https://fonts.google.com/specimen/Cal+Sans" target="_blank">Cal Sans Font</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Ambitions Section -->
+            <!-- Ambitions Section (unchanged) -->
             <h2 class="Cal-text">Ambitions</h2>
             <div class="ambitions-container">
                 <div class="ambition-card">
@@ -171,7 +186,7 @@
                 </div>
             </div>
 
-            <!-- Gallery Section -->
+            <!-- Gallery Section (unchanged) -->
             <div class="containergoogle">
                 <h2 class="apple-text">Niña's Picture Gallery</h2>
                 <p>Significant people, events and volunteer work in my life.</p>
@@ -179,7 +194,6 @@
 
             <!-- Slideshow Gallery -->
             <div class="slideshow-container">
-                <!-- Add your slideshow HTML here -->
                 <div class="mySlides"><div class="numbertext">1 / 11</div><img src="/public/assets/Family2.png" style="width:100%"></div>
                 <div class="mySlides"><div class="numbertext">2 / 11</div><img src="/public/assets/Family.png" style="width:100%"></div>
                 <div class="mySlides"><div class="numbertext">3 / 11</div><img src="/public/assets/Concert.png" style="width:100%"></div>
@@ -211,38 +225,6 @@
                     <div class="column"><img class="demo cursor" src="/public/assets/CollegeFriends.png" style="width:100%" onclick="currentSlide(9)" alt="College Friends"></div>
                     <div class="column"><img class="demo cursor" src="/public/assets/PAW.png" style="width:100%" onclick="currentSlide(10)" alt="Singing at Church"></div>
                     <div class="column"><img class="demo cursor" src="/public/assets/CE.jpg" style="width:100%" onclick="currentSlide(11)" alt="Teaching Kids at Church"></div>
-                </div>
-            </div>
-
-            <!-- Resource Documentation -->
-            <h2 class="Cal-text">Resource Documentation</h2>
-            <div class="resource-container">
-                <div class="resource-grid">
-                    <div class="resource-card">
-                        <h3>AI Assistance</h3>
-                        <ul class="resource-list">
-                            <li><a href="https://chatgpt.com/share/695bca01-47a4-800c-94c5-a38a266d4702" target="_blank">ChatGPT Queries</a></li>
-                            <li><a href="https://gemini.google.com/share/3878fceb63d1" target="_blank">Google Gemini Queries</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="resource-card">
-                        <h3>W3 Schools Resources</h3>
-                        <ul class="resource-list">
-                            <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid" target="_blank">CSS Grid</a></li>
-                            <li><a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery" target="_blank">Slide Show Gallery</a></li>
-                            <li><a href="https://www.w3schools.com/vue/tryit.php?filename=tryvue_forms_shoppingList3" target="_blank">Survey Form</a></li>
-                            <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox" target="_blank">Flexbox</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="resource-card">
-                        <h3>Google Fonts</h3>
-                        <ul class="resource-list">
-                            <li><a href="https://fonts.google.com/specimen/Homemade+Apple" target="_blank">Homemade Apple Font</a></li>
-                            <li><a href="https://fonts.google.com/specimen/Cal+Sans" target="_blank">Cal Sans Font</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>

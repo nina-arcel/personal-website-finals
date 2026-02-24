@@ -303,13 +303,22 @@
 
         <!-- RIGHT SIDE: Guestbook - Load the built HTML -->
 <!-- RIGHT SIDE: Guestbook -->
-<div class="guestbook-sidebar">
+<!-- <div class="guestbook-sidebar">
     <iframe 
         src="/frontend/build/index.html" 
         style="width:100%; height:100vh; border:none; background-color: #f8e1ed;"
         title="Guestbook"
     ></iframe>
+</div> -->
+
+<!-- RIGHT SIDE: Guestbook - Direct Embed -->
+<div class="guestbook-sidebar">
+    <div id="guestbook-root"></div>
 </div>
+
+<!-- Load guestbook assets directly -->
+<script type="module" src="/assets/index-8A4PTrCl.js"></script>
+<link rel="stylesheet" href="/assets/index-BZFU7v4D.css">
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

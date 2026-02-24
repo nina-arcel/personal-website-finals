@@ -302,13 +302,14 @@
         </div> <!-- Close profile-content -->
 
         <!-- RIGHT SIDE: Guestbook - iFrame Method -->
+<!-- RIGHT SIDE: Guestbook - Direct Embed -->
 <div class="guestbook-sidebar">
-    <iframe 
-        src="frontend/index.html" 
-        style="width:100%; height:100vh; border:none; background-color: #f8e1ed;"
-        title="Guestbook"
-    ></iframe>
+    <div id="guestbook-root"></div>
 </div>
+
+<!-- Load guestbook files directly (these should work!) -->
+<link rel="stylesheet" href="/assets/index-BZFU7v4D.css">
+<script type="module" src="/assets/index-8A4PTrCI.js"></script>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

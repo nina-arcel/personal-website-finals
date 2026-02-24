@@ -11,18 +11,6 @@
       "config": {
         "outputDirectory": "build"
       }
-    },
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "css/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -40,15 +28,15 @@
     },
     {
       "src": "/css/(.*)",
-      "dest": "css/$1"
+      "dest": "/css/$1"
     },
     {
       "src": "/public/(.*)",
-      "dest": "public/$1"
+      "dest": "/public/$1"
     },
     {
       "src": "/",
-      "dest": "index.html"
+      "dest": "/index.html"
     }
   ]
 }

@@ -7,9 +7,7 @@ export default defineConfig({
     outDir: 'build',
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        guestbook: 'index.html' 
-      }
+      input: 'index.html'  
     }
   }
 })

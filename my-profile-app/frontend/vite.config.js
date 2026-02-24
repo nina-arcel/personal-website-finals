@@ -5,6 +5,11 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'build',
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        guestbook: 'index.html' 
+      }
+    }
   }
 })
